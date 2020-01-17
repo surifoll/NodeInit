@@ -3,7 +3,7 @@ var path = require('path');
 var open = require('open');
 
 var webpack = require('webpack');
-const config =  require('../webpack.config.dev');
+const config = require('../webpack.config.dev');
 
 
 const compiler = webpack(config);
@@ -17,13 +17,19 @@ app.use(require('webpack-dev-middleware')(compiler, {
     publicPath: config.output.publicPath
 }))
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, '../src/index.html'));
+    res.sendFile(path.join(__dirname, '../src/index.html'));
 });
 
-app.listen(port, (err) =>{
+app.get('/books', (req, res) => {
+    res.json([{ id: 1, name: 'Suraj', age: 10 },
+    { id: 1, name: 'wwww', age: 10 },
+    { id: 1, name: 'ffff', age: 10 }]);
+});
+
+app.listen(port, (err) => {
     if (err) {
         console.log(err);
-    }else{
-        open('http://localhost:'+ port)
+    } else {
+        open('http://localhost:' + port)
     }
 })
