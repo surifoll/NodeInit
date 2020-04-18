@@ -1,0 +1,34 @@
+{
+    "users": [
+        {
+            "id": 67177057,
+            "firstName": "Barton",
+            "lastName": "Mosciski",
+            "email": "Lela_Collins91@hotmail.com"
+        },
+        {
+            "id": 11569887,
+            "firstName": "Rory",
+            "lastName": "Davis",
+            "email": "Hilda.Frami86@yahoo.com"
+        },
+        {
+            "id": 95692870,
+            "firstName": "Eden",
+            "lastName": "Rogahn",
+            "email": "Crystal32@yahoo.com"
+        },
+        {
+            "id": 15410286,
+            "firstName": "Chesley",
+            "lastName": "Hegmann",
+            "email": "Alan11@hotmail.com"
+        },
+        {
+            "id": 35380498,
+            "firstName": "Juliana",
+            "lastName": "Zulauf",
+            "email": "Linnea31@yahoo.com"
+        }
+    ]
+}
